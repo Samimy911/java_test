@@ -1,0 +1,25 @@
+Dis 1 & 2 — JDBC (DELETE & UPDATE)
+Java uses JDBC to connect to a MySQL database. 
+executeUpdate() runs SQL commands like DELETE and UPDATE, and returns how many rows were affected. 
+You need a driver, connection URL, and Statement object to execute queries.
+
+Dis 3 — Servlet
+A Servlet is a Java class that runs on a web server and handles HTTP requests.
+ It uses doGet() to receive requests and sends back HTML responses. 
+The URL has two parts: the Context-Path (app name) and URL-Pattern (servlet path).
+
+Dis 4 — JSP
+JSP lets you write Java code inside HTML pages using <%= %> tags. 
+It's simpler than Servlets for displaying dynamic content like dates or user data. 
+The server processes the Java, then sends plain HTML to the browser.
+
+Dis 5 — Java Networking
+Java networking uses Sockets for communication. 
+The Server listens on a port, the Client connects to it,and both exchange data using input/output streams over TCP/IP.
+
+Dis 6 — Hibernate
+Hibernate is an ORM framework that lets you work with database records as Java objects — no raw SQL needed. 
+You annotate a class with @Entity, use Session to save or retrieve data, and Hibernate handles the SQL automatically.
+
+
+One-liner: JDBC = raw SQL in Java, Servlet/JSP = Java web pages, Networking = socket communication, Hibernate = database without writing SQL.
