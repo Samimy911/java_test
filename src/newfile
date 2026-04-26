@@ -14,12 +14,26 @@ It's simpler than Servlets for displaying dynamic content like dates or user dat
 The server processes the Java, then sends plain HTML to the browser.
 
 Dis 5 — Java Networking
-Java networking uses Sockets for communication. 
-The Server listens on a port, the Client connects to it,and both exchange data using input/output streams over TCP/IP.
+
+Java networking allows two programs to communicate over a network using sockets.
+
+Server uses ServerSocket to listen on a port and waits for connections using accept()
+Client uses Socket to connect to the server's IP and port
+Once connected, both sides use InputStream and OutputStream to send and receive data
+This follows the Client-Server model where the client makes requests and the server responds
+Communication is done over TCP/IP which ensures reliable data transfer
 
 Dis 6 — Hibernate
 Hibernate is an ORM framework that lets you work with database records as Java objects — no raw SQL needed. 
 You annotate a class with @Entity, use Session to save or retrieve data, and Hibernate handles the SQL automatically.
 
 
-One-liner: JDBC = raw SQL in Java, Servlet/JSP = Java web pages, Networking = socket communication, Hibernate = database without writing SQL.
+Hibernate is a Java framework that maps Java objects to database tables — called ORM (Object-Relational Mapping).
+
+Instead of writing raw SQL, you work with Java classes and objects
+A class annotated with @Entity represents a database table
+@Id marks the primary key field
+SessionFactory creates database sessions
+session.save() inserts a record, session.get() retrieves one
+Hibernate handles the SQL behind the scenes automatically
+Configuration is done through hibernate.cfg.xml (database URL, driver, dialect)
